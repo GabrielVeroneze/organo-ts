@@ -1,0 +1,35 @@
+.time {
+    padding: 2.125rem 0 2.5rem;
+    text-align: center;
+}
+
+.time__titulo {
+    color: #212121;
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    line-height: 43px;
+    margin: 0 0 0.5rem 0;
+}
+
+.time__sublinhado {
+    height: 4px;
+    left: 50%;
+    margin-bottom: 2.625rem;
+    position: relative;
+    transform: translateX(-50%);
+    width: 32px;
+}
+
+.time__colaboradores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 0 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .time__colaboradores {
+        margin: 0 3.5rem;
+    }
+}

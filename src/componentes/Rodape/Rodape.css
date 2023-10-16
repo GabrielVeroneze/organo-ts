@@ -1,0 +1,44 @@
+.rodape {
+    background-color: #6278F7;
+    background-image: url('../../../public/imagens/fundo.png');
+    display: flex;
+    justify-content: center;
+    padding: 4.6875rem 5rem;
+}
+
+.rodape__caixa {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.125rem;
+    justify-content: space-between;
+    max-width: 1120px;
+    width: 100%;
+}
+
+.rodape__social {
+    display: flex;
+    gap: 2.125rem;
+}
+
+.rodape__logo {
+    height: auto;
+    width: 166px;
+}
+
+.rodape__creditos {
+    color: #FFFFFF;
+    font-family: var(--fonte-texto);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    max-width: 166px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .rodape__caixa {
+        justify-content: space-around;
+    }
+}
