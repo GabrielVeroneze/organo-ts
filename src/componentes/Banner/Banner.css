@@ -1,6 +1,5 @@
 .banner {
     background-color: #6278F7;
-    background-image: url('/public/imagens/duotone.png'), url('/public/imagens/fundo.png');
     background-position: bottom right, left top;
     background-repeat: no-repeat;
     background-size: clamp(200px, 100%, 517px) auto, cover;
