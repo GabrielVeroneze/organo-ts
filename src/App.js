@@ -52,7 +52,12 @@ function App() {
 
     return (
         <div className="App">
-            <Banner />
+            <Banner
+                enderecoImagens={[
+                    "imagens/duotone.png",
+                    "imagens/fundo.png"
+                ]}
+            />
             <Formulario 
                 times={times.map(time => time.nome)}
                 aoColaboradorCadastrado={colaboradores => aoNovoColaboradorCadastrado(colaboradores)}

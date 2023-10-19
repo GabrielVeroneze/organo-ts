@@ -1,8 +1,21 @@
+import React from 'react'
 import './Banner.css'
 
-export const Banner = () => {
+interface BannerProps {
+    enderecoImagens: string
+}
+
+const Banner = ({ enderecoImagens } : BannerProps) => {
     return (
-        <header className='banner'>
+        <header
+            className='banner'
+            style={{
+                backgroundImage: `
+                    url(${enderecoImagens[0]}),
+                    url(${enderecoImagens[1]})
+                `
+            }}
+        >
             <div className='banner__caixa'>
                 <img className='banner__logo' src="/imagens/logo.png" alt="Logo do Organo" />
                 <h1 className='banner__titulo'>
@@ -12,3 +25,5 @@ export const Banner = () => {
         </header>
     )
 }
+
+export default Banner
