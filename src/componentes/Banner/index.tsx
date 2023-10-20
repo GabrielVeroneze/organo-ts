@@ -2,7 +2,7 @@ import React from 'react'
 import './Banner.css'
 
 interface BannerProps {
-    enderecoImagens: string
+    enderecoImagens: string[]
 }
 
 const Banner = ({ enderecoImagens } : BannerProps) => {
