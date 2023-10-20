@@ -1,25 +1,29 @@
 import './CampoTexto.css'
 
 interface CampoTextoProps {
-    
+    obrigatorio: boolean
+    label: string
+    placeholder: string
+    valor: string
+    aoAlterado: (valor: string) => void
 }
 
-const CampoTexto = (props) => {
+const CampoTexto = ({ obrigatorio, label, placeholder, valor, aoAlterado } : CampoTextoProps) => {
 
-    const aoDigitado = (evento) => {
-        props.aoAlterado(evento.target.value)
+    const aoDigitado = (evento: React.ChangeEvent<HTMLInputElement>) => {
+        aoAlterado(evento.target.value)
     }
 
     return (
         <div className="campo-texto">
-            <label className='campo-texto__label'>{props.label}</label>
+            <label className='campo-texto__label'>{label}</label>
             <input 
-                value={props.valor}
+                value={valor}
                 onChange={aoDigitado}
-                required={props.obrigatorio}
+                required={obrigatorio}
                 className='campo-texto__input'
                 type="text"
-                placeholder={props.placeholder}
+                placeholder={placeholder}
             />
         </div>
     )
