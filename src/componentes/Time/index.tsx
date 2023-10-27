@@ -10,30 +10,32 @@ interface TimeProps {
 }
 
 const Time = ({ nome, corPrimaria, corSecundaria, colaboradores } : TimeProps) => {    
-    return ( 
-        colaboradores.length > 0 && (
-            <section
-                className='time'
-                style={{ backgroundColor: corSecundaria }}
-            >
-                <h3 className='time__titulo'>{nome}</h3>
-                <div 
-                    className='time__sublinhado' 
-                    style={{backgroundColor: corPrimaria}}
-                ></div>
-                <div className='time__colaboradores'>
-                    {colaboradores.map(colaborador => (
-                        <Colaborador
-                            key={colaborador.nome}
-                            nome={colaborador.nome}
-                            cargo={colaborador.cargo}
-                            imagem={colaborador.imagem}
-                            corDeFundo={corPrimaria}
-                        />
-                    ))}
-                </div>
-            </section>
-        ) 
+    return (
+        <>
+            {colaboradores.length > 0 && (
+                <section
+                    className='time'
+                    style={{ backgroundColor: corSecundaria }}
+                >
+                    <h3 className='time__titulo'>{nome}</h3>
+                    <div 
+                        className='time__sublinhado' 
+                        style={{backgroundColor: corPrimaria}}
+                    ></div>
+                    <div className='time__colaboradores'>
+                        {colaboradores.map(colaborador => (
+                            <Colaborador
+                                key={colaborador.nome}
+                                nome={colaborador.nome}
+                                cargo={colaborador.cargo}
+                                imagem={colaborador.imagem}
+                                corDeFundo={corPrimaria}
+                            />
+                        ))}
+                    </div>
+                </section>
+            )}
+        </>
     )
 }
 
