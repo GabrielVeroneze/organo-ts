@@ -4,10 +4,11 @@ interface ColaboradorProps {
     nome: string
     cargo: string
     imagem: string
+    data: string
     corDeFundo: string
 }
 
-const Colaborador = ({ nome, cargo, imagem, corDeFundo } : ColaboradorProps) => {
+const Colaborador = ({ nome, cargo, imagem, data, corDeFundo } : ColaboradorProps) => {
     return (
         <div className='colaborador'>
             <div
@@ -19,6 +20,9 @@ const Colaborador = ({ nome, cargo, imagem, corDeFundo } : ColaboradorProps) => 
             <div className='colaborador__rodape'>
                 <h4 className='colaborador__nome'>{nome}</h4>
                 <h5 className='colaborador__cargo'>{cargo}</h5>
+                <h5 className='colaborador__data'>
+                    {new Date(data).toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
+                </h5>
             </div>
         </div>
     )

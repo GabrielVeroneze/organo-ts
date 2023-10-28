@@ -29,6 +29,7 @@ const Time = ({ nome, corPrimaria, corSecundaria, colaboradores } : TimeProps) =
                                 nome={colaborador.nome}
                                 cargo={colaborador.cargo}
                                 imagem={colaborador.imagem}
+                                data={colaborador.data}
                                 corDeFundo={corPrimaria}
                             />
                         ))}

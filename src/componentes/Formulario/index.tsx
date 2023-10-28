@@ -24,11 +24,13 @@ const Formulario = ({ times, aoColaboradorCadastrado } : FormularioProps) => {
             nome,
             cargo,
             imagem,
+            data,
             time
         })
         setNome('')
         setCargo('')
         setImagem('')
+        setData('')
         setTime('')
     }
 
