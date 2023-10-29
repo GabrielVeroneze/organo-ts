@@ -1,14 +1,46 @@
 <p align="center"> <img src="https://imgur.com/4b57aFn.png" alt="React: desenvolvendo com JavaScript"> </p>
-<p>Projeto desenvolvido durante o curso "React: desenvolvendo com JavaScript" da Alura.</p>
+<p>Projeto desenvolvido durante o curso "React: migrando para TypeScript" da Alura.</p>
 
 <hr>
 
-<h1 align="center">Organo</h1>
-<p align="center">A aplicação Organo é um organograma interativo desenvolvido em React. Desenvolvido especificamente para uma escola de cursos online, a aplicação fornece uma representação visual clara e hierárquica da estrutura de colaboradores da escola, organizando-os por times categorizados em áreas de especialização.</p>
+## Índice
 
-## :hammer: Funcionalidades da aplicação
+- [Descrição](#descricao)
+- [Funcionalidades e Recursos](#rocket-funcionalidades-e-recursos)
+   - [Páginas Principais](#páginas-principais)
+   - [Recursos de Interatividade](#recursos-de-interatividade)
+   - [Navegação](#navegação)
+- [Desenvolvimento e Implementação](#toolbox-desenvolvimento-e-implementação)
+   - [Estilização e Componentes](#estilização-e-componentes)
+   - [Roteamento](#roteamento)
+   - [Hooks e Contextos](#hooks-e-contextos)
+   - [Consumo de API](#consumo-de-api)
+   - [Responsividade](#responsividade)
+- [Ferramentas utilizadas](#computer-ferramentas-utilizadas)
+- [Acesso ao projeto](#open_file_folder-acesso-ao-projeto)
+- [Instruções](#clipboard-instruções)
+- [Demonstração Visual](#camera-demonstração-visual)
 
-- `Criação de card do colaborador`: Cria um card de colaborador com as informações fornecidas no formulário, como nome, cargo, imagem e time. Tornando o card visualmente identificável e personalizado.
+<h1 align="center" id="descricao">Organo TS</h1>
+<p align="center">O Organo TS é uma versão em TypeScript da aplicação <a href="https://github.com/GabrielVeroneze/organo">Organo</a> original em JavaScript, mantendo todas as funcionalidades do Organo e enriquecendo o projeto com melhorias proporcionadas pelo TypeScript, que garantem maior segurança de tipos e um desenvolvimento mais robusto e escalável.</p>
+
+<p align="center">O Organo é um organograma interativo, proporcionando uma representação visual hierárquica da estrutura de colaboradores organizados por times categorizados em áreas de especialização.</p>
+
+## :rocket: Funcionalidades e Recursos
+
+
+
+- `Criação de Card do Colaborador`: Permite a criação de cards de colaboradores com informações como nome, cargo, imagem e time, tornando cada card visualmente identificável e personalizado.
+
+
+
+<!-- Upload de Imagem: Oferece a opção de fazer upload da imagem do colaborador diretamente pelo formulário de criação de card.
+
+Seleção de Equipe Específica: Disponibiliza uma lista de opções de equipes, incluindo programação, Front-end, Data Science, DevOps, UX e Design, Mobile e Inovação, e gestão.
+
+Adição Automática ao Organograma: Após a criação do card do colaborador, o card é automaticamente adicionado ao organograma, no local correspondente à equipe escolhida. -->
+
+
 
 - `Upload de imagem`: Possui a opção de fazer o upload da imagem do colaborador diretamente pelo formulário.
 
@@ -16,7 +48,12 @@
 
 - `Adição do card ao organograma`: Após a criação do card do colaborador, ele é adicionado automaticamente ao organograma, no local correspondente ao seu time.
 
-## :computer: Tecnologias e Ferramentas utilizadas
+
+
+
+## :toolbox: Desenvolvimento e Implementação
+
+## :computer: Ferramentas utilizadas
 
 <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> | <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> | <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
  ------------------------- | ---------------- | ----------------------
@@ -64,7 +101,7 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
 &nbsp; &nbsp; &nbsp; &nbsp;Isso abrirá automaticamente a aplicação no seu navegador. Se não abrir, acesse o endereço http://localhost:3000.
 <br>
 
-## Demonstração Visual
+## :camera: Demonstração Visual
 `Formulário`
 ![Organo](https://imgur.com/fjCFeFY.png)
 
