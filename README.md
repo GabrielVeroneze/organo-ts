@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://imgur.com/4b57aFn.png" alt="React: desenvolvendo com JavaScript"> </p>
+<p align="center"><img src="https://imgur.com/4b57aFn.png" alt="React: desenvolvendo com JavaScript"></p>
 <p>Projeto desenvolvido durante o curso "React: migrando para TypeScript" da Alura.</p>
 
 <hr>
@@ -7,15 +7,12 @@
 
 - [Descrição](#descricao)
 - [Funcionalidades e Recursos](#rocket-funcionalidades-e-recursos)
-   - [Páginas Principais](#páginas-principais)
-   - [Recursos de Interatividade](#recursos-de-interatividade)
-   - [Navegação](#navegação)
 - [Desenvolvimento e Implementação](#toolbox-desenvolvimento-e-implementação)
-   - [Estilização e Componentes](#estilização-e-componentes)
-   - [Roteamento](#roteamento)
-   - [Hooks e Contextos](#hooks-e-contextos)
-   - [Consumo de API](#consumo-de-api)
-   - [Responsividade](#responsividade)
+   - [Migração para TypeScript](#migração-para-typescript)
+   - [Integração de Componentes](#integração-de-componentes)
+   - [Tipagem de Funções e Componentes](#tipagem-de-funções-e-componentes)
+   - [Utilização de Generics](#utilização-de-generics)
+   - [Estilização e Responsividade](#estilização-e-responsividade)
 - [Ferramentas utilizadas](#computer-ferramentas-utilizadas)
 - [Acesso ao projeto](#open_file_folder-acesso-ao-projeto)
 - [Instruções](#clipboard-instruções)
@@ -28,55 +25,61 @@
 
 ## :rocket: Funcionalidades e Recursos
 
-
-
 - `Criação de Card do Colaborador`: Permite a criação de cards de colaboradores com informações como nome, cargo, imagem e time, tornando cada card visualmente identificável e personalizado.
 
+- `Upload de Imagem`: Oferece a opção de fazer upload da imagem do colaborador diretamente pelo formulário de criação de card.
 
+- `Seleção de Time`: Disponibiliza uma lista de opções de times, incluindo programação, Front-end, Data Science, DevOps, UX e Design, Mobile e Inovação e gestão.
 
-<!-- Upload de Imagem: Oferece a opção de fazer upload da imagem do colaborador diretamente pelo formulário de criação de card.
-
-Seleção de Equipe Específica: Disponibiliza uma lista de opções de equipes, incluindo programação, Front-end, Data Science, DevOps, UX e Design, Mobile e Inovação, e gestão.
-
-Adição Automática ao Organograma: Após a criação do card do colaborador, o card é automaticamente adicionado ao organograma, no local correspondente à equipe escolhida. -->
-
-
-
-- `Upload de imagem`: Possui a opção de fazer o upload da imagem do colaborador diretamente pelo formulário.
-
-- `Seleção de time`: Oferece uma lista de opções de times, como programação, Front-end, Data Science, DevOps, UX e Design, Mobile e Inovação e gestão.
-
-- `Adição do card ao organograma`: Após a criação do card do colaborador, ele é adicionado automaticamente ao organograma, no local correspondente ao seu time.
-
-
-
+- `Adição ao Organograma`: Após a criação do card do colaborador, ele é adicionado automaticamente ao organograma, no local correspondente ao time escolhido.
 
 ## :toolbox: Desenvolvimento e Implementação
 
+### Migração para TypeScript
+
+- `Migração Gradual`: O Organo TS é uma migração do projeto Organo de JavaScript para TypeScript. Essa migração ocorreu de forma gradual e cuidadosa, incorporando os benefícios do TypeScript.
+
+- `Configuração do tsconfig.json`: Gera o arquivo `tsconfig.json` com configurações padrões para o TypeScript, incluindo configurações para a sintaxe JSX do React e detecção de variáveis e parâmetros não utilizados.
+
+### Integração de Componentes
+
+- `Alteração de Extensões`: Durante o processo de migração, as extensões dos arquivos JavaScript foram modificadas para `.tsx` para indicar explicitamente o uso do TypeScript nos componentes React.
+
+- `Uso de Interfaces`: Foram criadas interfaces para definir a estrutura de propriedades que um componente pode receber. Uma interface "global" foi criada para ser utilizada em diferentes partes da aplicação.
+
+- `Propriedades da Interface`: Foram configuradas propriedades opcionais e propriedades com múltiplos tipos, permitindo uma maior flexibilidade na definição de componentes.
+
+### Tipagem de Funções e Componentes
+
+- `Tipagem de Componentes`: Componentes que recebem tipos primitivos como props, assim como componentes que recebem arrays de strings e objetos como props, são tipados de acordo com as necessidades da aplicação.
+
+- `Tipagem de Funções`: Inclui a tipagem de funções que recebem argumentos e não retornam valor, tornando o código mais explícito e seguro.
+
+- `Tipagem de Eventos`: Inclui a tipagem de funções que lidam com eventos como o `onChange` de um input para garantir a correta manipulação dos eventos.
+
+### Utilização de Generics
+
+- `Generics em Hooks useState`: Para especificar explicitamente o tipo de dado que será armazenado no estado, foram utilizados generics nos hooks `useState`.
+
+### Estilização e Responsividade
+
+- `BEM para CSS`: Utiliza a metodologia BEM para nomeação de classes em CSS, garantindo uma estrutura consistente e organizada.
+
+- `Media Queries`: Implementa media queries para garantir a responsividade da aplicação em dispositivos móveis, tablets e desktops.
+
 ## :computer: Ferramentas utilizadas
 
-<img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> | <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> | <img height="50px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
- ------------------------- | ---------------- | ----------------------
-`children`                 | `Flexbox`        | `Node Package Manager`
-`Componentes Controlados`  | `Media Queries`  | `create-react-app`
-`Componentes Funcionais`   | `Pseudoclasses`  |
-`Desestruturação de Props` | `Responsividade` |
-`Eventos`                  | `Variáveis`      |
-`Hooks`                    | `...`            |
-`JSX`                      |                  |
-`Props`                    |                  |
-`Renderização Condicional` |                  |
-`Renderização de Listas`   |                  |
-`useState`                 |                  |
-`...`                      |                  |
+| &nbsp; React | TypeScript | Create React App |
+| ------------ | ---------- | ---------------- |
+<img height="65px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> | <img height="65px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /> | &nbsp; 
 
 ## :open_file_folder: Acesso ao projeto
 Você pode baixar o projeto diretamente:  
-[Baixar código fonte](https://github.com/GabrielVeroneze/organo/archive/refs/heads/master.zip)
+[Baixar código fonte](https://github.com/GabrielVeroneze/organo-ts/archive/refs/heads/main.zip)
 
 Também é possível clonar o repositório usando o seguinte comando:
 ```
-git clone https://github.com/GabrielVeroneze/organo.git
+git clone https://github.com/GabrielVeroneze/organo-ts.git
 ```
 
 ## :clipboard: Instruções
@@ -86,7 +89,7 @@ Para usar este projeto em seu computador localmente, você precisará seguir est
 
 2. Abra o terminal e navegue até a pasta raiz do projeto usando o comando `cd` no terminal. Por exemplo:
    ```
-   cd C:\Users\SeuUsuario\projetos\meu-projeto
+   cd organo-ts
    ```
 3. Antes de iniciar a aplicação, instale as dependências necessárias executando o seguinte comando:
    ```
