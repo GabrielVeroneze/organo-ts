@@ -1,4 +1,4 @@
-<p align="center"><img src="https://imgur.com/4b57aFn.png" alt="React: desenvolvendo com JavaScript"></p>
+<p align="center"><img src="https://github.com/GabrielVeroneze/organo-ts/assets/95183901/501be422-1f2d-4bf7-a219-3b59eec05188"></p>
 <p>Projeto desenvolvido durante o curso "React: migrando para TypeScript" da Alura.</p>
 
 <hr>
@@ -18,7 +18,7 @@
 - [Instruções](#clipboard-instruções)
 - [Demonstração Visual](#camera-demonstração-visual)
 
-<h1 align="center" id="descricao">Organo TS</h1>
+<h1 align="center" id="descricao"><img width="250px" src="https://github.com/GabrielVeroneze/organo-ts/assets/95183901/45c9da4b-5f2d-4a5e-89b8-2097a56e6bc6"></h1>
 <p align="center">O Organo TS é uma versão em TypeScript da aplicação <a href="https://github.com/GabrielVeroneze/organo">Organo</a> original em JavaScript, mantendo todas as funcionalidades do Organo e enriquecendo o projeto com melhorias proporcionadas pelo TypeScript, que garantem maior segurança de tipos e um desenvolvimento mais robusto e escalável.</p>
 
 <p align="center">O Organo é um organograma interativo, proporcionando uma representação visual hierárquica da estrutura de colaboradores organizados por times categorizados em áreas de especialização.</p>
@@ -71,7 +71,7 @@
 
 | &nbsp; React | TypeScript | Create React App |
 | ------------ | ---------- | ---------------- |
-<img height="65px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> | <img height="65px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /> | &nbsp; 
+<img height="65px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> | <img height="65px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /> | &nbsp; <img height="65px" src="https://github.com/GabrielVeroneze/organo-ts/assets/95183901/e3ad7d09-fa06-4385-a817-4eb524caa98d" />
 
 ## :open_file_folder: Acesso ao projeto
 Você pode baixar o projeto diretamente:  
